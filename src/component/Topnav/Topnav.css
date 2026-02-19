@@ -1,0 +1,99 @@
+.top_nav {
+  height: 76px;
+  background-color: var(--card);
+  color: var(--text);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  border-bottom: 1px solid var(--border);
+  position: fixed;
+  top: 0;
+  z-index: 9;
+}
+
+/* From Uiverse.io by adamgiebl */
+.cssbuttons-io-button {
+  display: flex;
+  align-items: center;
+  font-family: inherit;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 0.7em 1.4em 0.7em 1.1em;
+  color: #ffffff;
+
+  /* Purple Gradient */
+  background: linear-gradient(135deg, #7c3aed 0%, #a78bfa 100%);
+
+  border: none;
+  border-radius: 20em;
+  letter-spacing: 0.05em;
+
+  /* Soft Purple Shadow */
+  box-shadow: 0 0.7em 1.5em -0.5em rgba(124, 58, 237, 0.5);
+
+  transition: all 0.3s ease;
+}
+
+.cssbuttons-io-button svg {
+  margin-right: 6px;
+}
+
+.cssbuttons-io-button:hover {
+  box-shadow: 0 0.5em 1.5em -0.5em rgba(124, 58, 237, 0.7);
+  transform: translateY(-2px);
+}
+
+.cssbuttons-io-button:active {
+  box-shadow: 0 0.3em 1em -0.5em rgba(124, 58, 237, 0.4);
+  transform: translateY(0);
+}
+
+.search {
+  height: 40px;
+  width: 400px;
+  border-radius: 14px;
+  border: 1px solid #d1d5db;
+  padding-left: 40px;
+  padding-right: 40px;
+  box-sizing: border-box;
+  z-index: 8;
+}
+.search::placeholder {
+  color: var(--muted);
+  font-size: 15px;
+}
+.search:focus {
+  outline: none;
+  border-color: var(--highlight);
+  box-shadow: 0 0 0 2px rgba(192, 132, 252, 0.5);
+}
+.search_box {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+.search_box .search_icon {
+  position: absolute;
+  top: 18px;
+  right: 366px;
+  transform: translateY(-50%);
+  color: var(--highlight);
+  z-index: 9;
+  pointer-events: none;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text);
+  text-decoration: none;
+  transition: color 0.35s ease;
+}
+.logo:hover {
+  color: var(--primary);
+  text-decoration: underline;
+}

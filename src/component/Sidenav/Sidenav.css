@@ -1,0 +1,58 @@
+.side_nav {
+  width: 250px;
+  background-color: var(--card);
+  height: calc(100vh - 76px);
+  top: 76px;
+  left: 0;
+  overflow-y: auto;
+  border-right: 1px solid var(--border);
+  padding: 0px 10px;
+  position: fixed;
+  z-index: 100;
+}
+.options {
+  padding: 5px 20px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.opt {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  cursor: pointer;
+  color: var(--text);
+  border-radius: 15px;
+  background-color: var(--card);
+  gap: 10px;
+  transition: 0.25s;
+}
+.opt.active {
+  background-color: var(--primary);
+  color: var(--text);
+}
+.opt:not(.active):hover {
+  background-color: var(--primary);
+  color: var(--text);
+}
+
+.opt p {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+}
+
+.count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text);
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  font-size: 12px;
+  font-weight: bold;
+  margin-left: auto;
+  right: 30px;
+  position: absolute;
+}

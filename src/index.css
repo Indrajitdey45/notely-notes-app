@@ -1,0 +1,25 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --bg: #0f0a19;
+  --primary: #8b5cf6;
+  --card: #1e1b2e;
+  --text: #f3f4f6;
+  --muted: #9ca3af;
+  --highlight: #c084fc;
+  --border: #2a2540;
+  --blur: rgba(139, 92, 246, 0.35);
+}
+/* Apply it globally to the whole app */
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+/* Create a specific utility class if you only want it in certain places */
+.font-jakarta {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+}

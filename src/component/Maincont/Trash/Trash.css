@@ -1,0 +1,81 @@
+.empty{
+  position: absolute;
+  top: 17%;
+  left: 42%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.empty h2{
+  color: var(--text);
+  font-size: 24px;
+}
+.empty p{
+  color: var(--muted);
+  font-size: 16px;
+  align-items: center;
+  text-align: center;
+}
+.button-84 {
+  align-items: center;
+  background-color: transparent;
+
+  /* Purple gradient using your colors */
+  background-image: linear-gradient(135deg, #8B5CF6, #C084FC);
+
+  border-radius: 8px;
+  border: none;
+
+  /* purple shadow instead of black */
+  box-shadow:
+    0 10px 20px rgba(139, 92, 246, 0.25),
+    0 3px 6px rgba(192, 132, 252, 0.2);
+
+  box-sizing: border-box;
+  color: #F3F4F6;
+  cursor: pointer;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+
+  font-family: system-ui, sans-serif;
+  font-size: 18px;
+  height: 52px;
+  padding: 0 32px;
+
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  user-select: none;
+}
+
+/* Hover */
+.button-84:hover {
+  box-shadow:
+    0 6px 16px rgba(139, 92, 246, 0.35),
+    0 2px 8px rgba(192, 132, 252, 0.3);
+  transform: translateY(-2px);
+}
+
+/* Click */
+.button-84:active {
+  transform: translateY(0);
+  box-shadow:
+    0 4px 10px rgba(139, 92, 246, 0.25);
+}
+
+/* Focus ring (accessible) */
+.button-84:focus {
+  outline: none;
+  box-shadow:
+    0 0 0 3px rgba(192,132,252,0.5);
+}
+
+/* Mobile */
+@media (max-width: 420px) {
+  .button-84 {
+    height: 48px;
+  }
+}
