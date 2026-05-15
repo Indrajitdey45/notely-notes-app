@@ -17,6 +17,19 @@
   align-items: center;
   text-align: center;
 }
+
+@media (max-width: 480px) {
+  .empty {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 100%;
+    padding: 40px 20px 20px;
+    margin: 0 auto;
+  }
+  .empty h2 { font-size: 20px; text-align: center; }
+  .empty p  { font-size: 14px; }
+}
 .button-84 {
   align-items: center;
   background-color: transparent;
@@ -74,8 +87,10 @@
 }
 
 /* Mobile */
-@media (max-width: 420px) {
+@media (max-width: 480px) {
   .button-84 {
     height: 48px;
+    font-size: 16px;
+    padding: 0 24px;
   }
 }

@@ -60,6 +60,8 @@
   padding-right: 40px;
   box-sizing: border-box;
   z-index: 8;
+  background-color: var(--bg);
+  color: var(--text);
 }
 .search::placeholder {
   color: var(--muted);
@@ -83,6 +85,43 @@
   color: var(--highlight);
   z-index: 9;
   pointer-events: none;
+}
+
+/* ── Mobile: 320px – 480px ── */
+@media (max-width: 480px) {
+  .top_nav {
+    height: 110px;
+    flex-wrap: wrap;
+    align-content: center;
+    padding: 10px 16px;
+    gap: 8px;
+  }
+
+  .logo h1 {
+    font-size: 22px;
+  }
+
+  .cssbuttons-io-button {
+    font-size: 14px;
+    padding: 0.5em 1em 0.5em 0.8em;
+  }
+
+  .search_box {
+    width: 100%;
+    order: 3;
+  }
+
+  .search {
+    width: 100%;
+    border-radius: 12px;
+  }
+
+  .search_box .search_icon {
+    right: auto;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }
 
 .logo {
